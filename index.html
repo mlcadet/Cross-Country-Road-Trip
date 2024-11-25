@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+            
+    </head>
+    <body>
+
+        <!---The distance of the trip, in total, is 1,500 miles.---->
+            <h1>Cross-country road trip cost Calculator</h1>
+            <p>This is a mathematical form to calculate your cross country trip mileage and Cross-country</p>
+            
+            <p>Distance of the trip in miles (Mil): <input id="distance" type="number" min="50" max="1500" onchange="computeFuelConsumption()"></p>
+
+            <p>Fuel Consumed (Gal): <input id="fuel" type="number" min="3" max="175" step="1" onchange="computeFuelConsumption()">
+                <input type="text" value="" placeholder="Mile per gallon"
+                <select class="select" id="js-select">
+                    <option class="select__item" value="1">Gallon per 55 mi</option>
+                    <option class="select__item" value="2">Gallon per 60 mi</option>
+                    <option class="select__item" value="3">Gallon per 75 mi</option>
+                </select>
+            </p>
+
+            
+            <p>Cost per Gallon fuel (Gal): <input id="costper" type="number" min="2.75" max="3.0" step="0.01" value="2.75" onchange="computeConsumption()"></p>
+            
+           <!----<p>TRIP COST: <input id='output' class="form-control" type="text" readonly>
+  
+                <input type=submit onclick='calculate_cost()' class="btn btn-default btn-submit form-control"></p> --->
+            
+            <h2 id="consumption"></h2>
+
+        <!-----------  >  
+
+
+
+         <script src="script.js"></script>
+    </body>
+</html>

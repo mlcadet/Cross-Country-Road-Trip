@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+            
+    </head>
+    <body>
+
+<h1>Calculate Your MPG</h1>
+<h2>Enter the information below to see if you are getting good mileage!</h2>
+
+<form id="mpgform">
+  <label for="miles_driven">Miles Driven: </label>
+  <input type="text" id="miles_driven" name="miles_driven" />
+  <span class="error" id="miles_driven_error"> </span>
+
+  <label for="gallons_used">Gallons of Gas Used: </label>
+  <input type="text" id="gallons_used" name="gallons_used" />
+  <span class="error" id="gallons_used_error"> </span>
+
+  <label for="price_gallon">Price per gallon: </label>
+  <input type="text" id="price_gallon" name="price_gallon" />
+  <span class="error" id="price_gallon_error"> </span>
+
+  <input
+    type="button"
+    id="btnCalc"
+    value="Calculate the MPG and Cost of the Trip"
+    class="clear"
+  />
+
+  <input type="button" id="btnClear" value="Clear Form" />
+</form>
+
+<p id="mpg"></p>
+
+<p id="cost"></p>
